@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    
+  "target": "ESNext",
+    "module": "ESNext",
+    "strict": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "types": [
+      "webpack-env",
+      "vuetify",
+      "vue-sweetalert2",
+    ],
+    "typeRoots": ["./node_modules/@types", "./types"],
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "lib": [ 
+      "esnext",
+      "dom",
+      "dom.iterable", 
+      "scripthost"
+    ]
+    
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx", "src/core/services/financeiro", "src/core/services/financeiro"
+    
+  ],
+  
+  "exclude": [
+    "node_modules"
+  ],
+
+  "extensions": [
+    ".vue"
+  ]
+
+}

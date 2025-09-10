@@ -1,0 +1,19 @@
+export default class InfraestruturaInternaImovel {
+    public arCondicionado: boolean = false;
+    public areaServico: boolean = false;
+    public armarioQuarto: boolean = false;
+    public armarioCozinha: boolean = false;
+    public armarioBanheiro: boolean = false;
+    public dispensa: boolean = false;
+    public lavabo: boolean = false;
+    public varandaGourmet: boolean = false;
+    public areaPrivativa: boolean = false;
+    public boxBanheiro: boolean = false;
+    public closet: boolean = false;
+    public mobiliado: boolean = false;
+    public solManha: boolean = false;
+    public vistaMar: boolean = false;
+    public dce: boolean = false;
+    public escritorio: boolean = false;
+    public rouparia: boolean = false;
+}

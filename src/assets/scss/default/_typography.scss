@@ -1,0 +1,150 @@
+
+@import 'variables';
+@import '~vuetify/src/styles/styles.sass';
+
+/*=========================
+    Section Separation 
+==========================*/
+/* Quando a largura da viewport é menor que 600px */
+
+.title-span {
+  font-size: 20px !important;
+  font-weight:600;
+} 
+.title-toolbar {
+  font-size: 30px !important;
+  font-weight:500;
+  color: #515151;
+} 
+
+@media #{$large-mobile} {
+  .title-span {
+    font-size: 15px !important;
+  }
+  .v-icon{
+    font-size: 25px !important;
+  }
+  .title-toolbar {
+    font-size: 18px !important;
+  }
+}
+
+/* =============  Tipos de textos padrões* =================== */
+
+
+.titulo-dashboards{
+  font-size: 20px;
+  font-weight: 600;
+}
+.responsive-text {
+  font-size: 14px;
+}
+
+.responsive-text-2{
+  font-size: 15px;
+}
+
+
+@media #{$lg-layout}{
+  .responsive-text {
+  font-size: 16px;
+  }
+
+  .responsive-text-2{
+    font-size: 20px;
+  }
+}
+@media #{$md-layout}{
+  .responsive-text {
+    font-size: 12px;
+  }
+  
+  .responsive-text-2{
+    font-size: 18px;
+  }
+}
+@media #{$sm-layout}{
+  .responsive-text {
+    font-size: 12px;
+  }
+  
+  .responsive-text-2{
+    font-size: 15px;
+  }
+}
+
+/* =============  Tipos de textos padrões fim =================== */
+
+
+ 
+ .v-data-table .v-data-table__wrapper::-webkit-scrollbar {
+  width: 8px; /* Largura da barra de rolagem */
+  height: 8px;
+}
+
+ .v-data-table .v-data-table__wrapper::-webkit-scrollbar-track {
+  background-color: transparent; /* Cor do fundo da trilha */
+  border-radius: 16px; /* Arredondar os cantos da trilha */
+}
+
+.v-data-table .v-data-table__wrapper::-webkit-scrollbar-thumb {
+  background-color: #E05A1B; /* Cor da barra de rolagem */
+  border-radius: 16px; /* Arredondar os cantos da barra de rolagem */
+}
+
+.v-data-table .v-data-table__wrapper::-webkit-scrollbar-thumb:hover {
+  background-color: #d04a1a; /* Cor da barra de rolagem quando o mouse passa por cima */
+}
+
+::-webkit-scrollbar {
+  width: 5px; /* Largura da barra de rolagem */
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--v-fundo-base);
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #d04a1a;
+}
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 10px;
+  transition: 1s;
+}
+.scrollbar-visible::-webkit-scrollbar-track {
+  background: var(--v-fundo-base);
+}
+.scrollbar-visible{
+  background: transparent;
+}
+/* Estilo do scrollbar quando está visível */
+.scrollbar-visible::-webkit-scrollbar-thumb {
+  background-color: #d04a1a;
+}
+
+/* Estilo ao passar o mouse sobre o scrollbar */
+::-webkit-scrollbar-thumb:hover, ::-webkit-scrollbar-thumb:focus {
+  background-color: #d04a1a;
+}
+
+::-webkit-scrollbar-thumb:hover, ::-webkit-scrollbar-thumb:active {
+  background: #d04a1a;
+  cursor: pointer;
+}
+
+
+
+/* Remove as setas de incremento/decremento em navegadores baseados no WebKit */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove as setas de incremento/decremento no Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+

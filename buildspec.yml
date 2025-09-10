@@ -1,0 +1,31 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: latest
+    commands:
+      - pip install --upgrade pip
+      - pip install --upgrade awscli
+  pre_build:
+    commands:
+      - echo Pre_build Phase
+      - npm install
+  build:
+    commands:
+      - echo Build Phase
+      - echo $ambiente
+      - bash build.sh
+  post_build:
+    commands:
+      - echo PostBuild Phase
+      - cp appspec.yml dist/
+      - cp application_start.sh dist/
+      - cp after_install.sh dist/
+      - cp before_install.sh dist/
+      - aws s3 rm s3://frontend-scae --recursive
+      - aws s3 sync dist/ s3://frontend-scae/
+artifacts:
+  files:
+    - '**/*'
+  base-directory: dist
