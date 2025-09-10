@@ -12,7 +12,7 @@
         <v-btn icon dark @click="close">
           <v-icon>mdi-close</v-icon>
         </v-btn>
-
+         <!--editar-->
         <v-toolbar-title
           >Editar Parcela
           <v-chip color="white" class="ml-2" label outlined>{{
