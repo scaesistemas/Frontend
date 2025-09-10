@@ -1,6 +1,6 @@
 <template> 
     <master-page titulo="kpi"> 
-
+      <!--bola-->
   </master-page>
 </template> 
 
