@@ -21,7 +21,7 @@ export default Vue.extend({
     const hideScrollbar = () => {
       document.body.classList.remove('scrollbar-visible');
     };
-
+    //hand
     const handleScroll = () => {
       showScrollbar();
       clearTimeout(isScrolling);
