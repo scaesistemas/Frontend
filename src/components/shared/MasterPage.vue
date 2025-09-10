@@ -272,6 +272,7 @@
 
  
     <!--gato-->
+    
     <v-flex>
       <v-sheet class="fundao col-12 appCard pb-3"  min-height="800px">
           <slot name="header">
@@ -289,7 +290,7 @@
         <strong>® SCAE</strong> — {{ new Date().getFullYear() }}
       </v-col>
     </v-footer>
-
+     <!--dados-->
     <meus-dados v-model="dialogCadastro" :item="item" @fechou="dialogCadastro = false"></meus-dados>
     <dados-assinante v-model="dialogCadastroAssinante" :assinante="assinante" @fechou="dialogCadastroAssinante = false"> </dados-assinante>
   </v-app>
