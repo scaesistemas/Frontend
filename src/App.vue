@@ -17,7 +17,7 @@ export default Vue.extend({
     const showScrollbar = () => {
       document.body.classList.add('scrollbar-visible');
     };
-
+    //hide
     const hideScrollbar = () => {
       document.body.classList.remove('scrollbar-visible');
     };
